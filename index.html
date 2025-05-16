@@ -1,8 +1,9 @@
-<!-- Converted HTML into JSX-compatible format -->
-export default function NyonyaPandanCoffee() {
+import React from 'react';
+
+function NyonyaPandanCoffee() {
   return (
-    <div className="bg-white text-[#004d40] font-serif min-h-screen">
-      <div className="flex flex-col items-center justify-center max-w-6xl mx-auto px-6 py-12 space-y-8">
+    <main className="bg-white text-[#004d40] font-serif min-h-screen">
+      <section className="flex flex-col items-center justify-center max-w-6xl mx-auto px-6 py-12 space-y-8">
         <div className="w-full bg-center bg-no-repeat bg-cover">
           <img
             src="https://u1.padletusercontent.com/uploads/padlet-uploads/3841003996/44836a2ad632735782f6c8896e08d11e/image.png?token=QJ5t0cp1CD6td7LejjKyujEgb98yFkViwgFlIUEjsJLPsmJDCc79fgLSFabTj3MHo3agy6CiHB8FHgGERnYXZYm4cV9BhQCX0upI-jKL_9Enk29mVVjhZ9e3c9Y7LPxb-QV4DuUIQYsNsKprYn9fdboZwgh8Cf1fzWYa6vklq1lBQIOMFBenbl8l1w7n38GdYH1krEN4-59slpOstHm0qFWFGJ-HcQV1MyNQZ7HOBck="
@@ -28,13 +29,13 @@ export default function NyonyaPandanCoffee() {
           </p>
           <div className="text-center">
             <p className="text-2xl font-bold mb-2">Order our signature Nyonya Pandan Coffee now</p>
-            <a href="/order.html" className="bg-green-600 hover:bg-green-700 text-white px-8 py-3 rounded-full shadow-md text-lg font-bold inline-block">$10</a>
+            <a href="order.html" className="bg-green-600 hover:bg-green-700 text-white px-8 py-3 rounded-full shadow-md text-lg font-bold inline-block">$10</a>
           </div>
           <div className="h-8" />
         </div>
-      </div>
+      </section>
 
-      <div className="max-w-4xl mx-auto px-6 pb-12">
+      <section className="max-w-4xl mx-auto px-6 pb-12">
         <h2 className="text-2xl font-semibold mb-4 text-center">Common Questions</h2>
         <div className="space-y-4">
           <details className="border border-gray-300 rounded p-4">
@@ -50,9 +51,9 @@ export default function NyonyaPandanCoffee() {
             <p className="mt-2 text-sm text-gray-600">Yes! We offer pandan oat milk lattes and other dairy-free choices to suit your lifestyle.</p>
           </details>
         </div>
-      </div>
+      </section>
 
-      <div className="max-w-2xl mx-auto px-6 pb-24 text-center">
+      <section className="max-w-2xl mx-auto px-6 pb-24 text-center">
         <h2 className="text-xl font-semibold mb-2">Stay in the loop</h2>
         <p className="mb-4 text-gray-700">Subscribe to get updates on new drinks, locations, and heritage stories.</p>
         <form
@@ -66,17 +67,19 @@ export default function NyonyaPandanCoffee() {
           <button type="submit" className="bg-green-700 hover:bg-green-800 text-white px-6 py-2 rounded">Subscribe</button>
           <p id="subscribe-msg" style={{ display: 'none' }} className="text-sm text-green-700 mt-2">Thanks for subscribing!</p>
         </form>
-      </div>
+      </section>
 
-      <div className="max-w-2xl mx-auto px-6 pb-12 text-center">
+      <section className="max-w-2xl mx-auto px-6 pb-12 text-center">
         <h2 className="text-xl font-semibold mb-2">Outlet</h2>
         <p className="text-gray-700 mb-1">Address: 10 Pasir Panjang Rd, #03-01 Mapletree Business City, Singapore 117438</p>
         <p className="text-gray-700">Operating Hours: 8.30am to 6:00pm</p>
-      </div>
+      </section>
 
       <footer className="bg-green-900 text-center text-sm text-white py-6 mt-8">
         © 2025 Nyonya Pandan Coffee — A Sip of Heritage
       </footer>
-    </div>
+    </main>
   );
 }
+
+export default NyonyaPandanCoffee;
