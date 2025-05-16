@@ -1,4 +1,3 @@
-<!-- Save this file as index.html for GitHub Pages deployment -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,7 +6,20 @@
   <title>Nyonya Pandan Coffee</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body class="bg-white text-[#004d40] font-serif min-h-screen">
+$1
+  <header class="bg-green-700 text-white p-4">
+    <div class="max-w-screen-xl mx-auto flex justify-between items-center">
+      <h1 class="text-lg font-semibold">Nyonya Pandan Coffee</h1>
+      <nav>
+        <select class="bg-green-600 text-white px-3 py-1 rounded" onchange="alert('Selected: ' + this.value)">
+          <option value="">Select Cofounder</option>
+          <option value="founder1">Cofounder A</option>
+          <option value="founder2">Cofounder B</option>
+          <option value="founder3">Cofounder C</option>
+        </select>
+      </nav>
+    </div>
+  </header>
   <main class="max-w-screen-xl mx-auto">
     <section class="flex flex-col items-center justify-center px-6 py-12 space-y-8">
       <img
